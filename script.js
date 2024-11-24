@@ -28,7 +28,7 @@ search.addEventListener("click", (e) => {
       feelsLike.innerHTML = `${json.main.feels_like} &deg;C`;
       windSpeed.textContent = `${json.wind.speed}km/h`;
       humudity.textContent = `${json.main.humidity}%`;
-      let condition = json.weather[0].description;
+      let condition = json.weather[0].main;
       gitGiph(condition);
     } catch (response) {
       error.textContent = response;
