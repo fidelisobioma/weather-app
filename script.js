@@ -31,7 +31,7 @@ search.addEventListener("click", (e) => {
       let condition = json.weather[0].main;
       gitGiph(condition);
     } catch (response) {
-      error.textContent = response;
+      error;
     }
   }
   getData();
